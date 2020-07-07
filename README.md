@@ -1,5 +1,6 @@
 # Cross_Modal_GCN
 Semi-supervised Graph Convolutional Hashing Network For Large-Scale Cross-Modal Hashing (Shen, Zhai et al., *ICIP 2020*)
+![framework](framework.png)
 
 ### Overview
 Here we provide the implementation of our model in TensorFlow, along with all experimental datasets. The repository is organised as follows:
