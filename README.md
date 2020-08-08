@@ -1,5 +1,5 @@
 # Cross_Modal_GCN
-Semi-supervised Graph Convolutional Hashing Network For Large-Scale Cross-Modal Hashing (Shen, Zhai et al., *ICIP 2020*)
+Semi-supervised Graph Convolutional Hashing Network For Large-Scale Cross-Modal Retrieval (Shen, Zhai et al., *ICIP 2020*)
 ![framework](framework.png)
 
 ### Overview
