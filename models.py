@@ -135,20 +135,6 @@ class ImgModel(Model):
 
     def _build(self):
 
-        # self.layers.append(Dense(input_dim=self.input_dim,
-        #                          output_dim=FLAGS.img_fc1,
-        #                          placeholders=self.placeholders,
-        #                          act=tf.nn.tanh,
-        #                          dropout=False,
-        #                          logging=self.logging))
-
-        # self.layers.append(Dense(input_dim=FLAGS.img_fc1,
-        #                          output_dim=self.output_dim,
-        #                          placeholders=self.placeholders,
-        #                          act=tf.nn.tanh,
-        #                          dropout=False,
-        #                          logging=self.logging))
-
         self.layers.append(GraphConvolution(input_dim=self.input_dim,
                                             output_dim=FLAGS.img_gc1,
                                             placeholders=self.placeholders,
@@ -240,19 +226,6 @@ class TxtModel(Model):
 
     def _build(self):
 
-        # self.layers.append(Dense(input_dim=self.input_dim,
-        #                          output_dim=FLAGS.txt_fc1,
-        #                          placeholders=self.placeholders,
-        #                          act=tf.nn.tanh,
-        #                          dropout=False,
-        #                          logging=self.logging))
-
-        # self.layers.append(Dense(input_dim=FLAGS.txt_fc1,
-        #                          output_dim=self.output_dim,
-        #                          placeholders=self.placeholders,
-        #                          act=tf.nn.tanh,
-        #                          dropout=False,
-        #                          logging=self.logging))
         ##self.txtFusion = self.MultiScaleTxt(self.inputs, self.input_dim)
         self.layers.append(GraphConvolution(input_dim=self.input_dim,
                                             output_dim=FLAGS.txt_gc1,
